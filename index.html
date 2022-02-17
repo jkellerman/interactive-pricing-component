@@ -28,10 +28,19 @@
       </div>
       <div class="main-container">
         <div class="pricing-container">
-          <div class="grid">
+          <div class="pricing-component">
             <div class="pageviews">100k pageviews</div>
-            <div>
-              <input type="range" id="slider" class="slider" />
+            <div class="slider-container">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                id="slider"
+                class="slider"
+              />
+              <div id="selector">
+                <div class="select-btn"></div>
+              </div>
             </div>
             <div class="pricing">
               <div class="price">$<span class="price-amount">16.00</span></div>
