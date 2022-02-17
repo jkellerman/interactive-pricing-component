@@ -154,6 +154,7 @@ body {
   font-size: 0.8em;
   margin-bottom: 2.53em;
   width: 90%;
+  max-width: 297px;
   transform: translateX(30px);
 }
 
@@ -207,7 +208,7 @@ input[type="checkbox"] {
 
 input:checked[type="checkbox"] {
   background: var(--Toggle-Active-Background);
-  transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 input[type="checkbox"]::before {
@@ -219,7 +220,7 @@ input[type="checkbox"]::before {
   left: 4px;
   border-radius: 50%;
   background: #fff;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 input:checked[type="checkbox"]::before {
@@ -271,4 +272,101 @@ li::before {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 575px) {
+  .main-container {
+    margin: 4.25em auto;
+    width: 540px;
+    height: 397px;
+  }
+
+  .pricing-component {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr;
+    height: 100%;
+  }
+
+  .pageviews {
+    grid-area: 1;
+    margin: 1.5em auto 1.5em;
+    transform: translateX(-1.25em);
+    align-self: center;
+    font-size: 0.93rem;
+  }
+
+  .pricing {
+    grid-column-start: 2;
+    margin: 1em auto 1em;
+    font-size: 2.7rem;
+    display: flex;
+    gap: 0;
+    width: 180px;
+    justify-content: space-evenly;
+  }
+
+  .slider-container {
+    margin-top: 0;
+    grid-row-start: 2;
+    grid-column: span 2;
+    width: 444px;
+    justify-self: center;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .monthly-container {
+    justify-content: space-evenly;
+  }
+
+  .billing {
+    min-width: 375px;
+  }
+
+  .yearly {
+    justify-content: space-between;
+    width: 175px;
+    align-items: center;
+  }
+
+  .yearly::after {
+    content: "25% discount";
+    font-size: 0.7rem;
+    transform: translateY(0.2em);
+  }
+
+  .list {
+    margin: 1.3em 0;
+  }
+
+  ul {
+    text-align: start;
+  }
+
+  .btn {
+    margin: 0;
+  }
+}
+
+@media (max-width: 338px) {
+  .billing {
+    /* flex-direction: column; */
+    margin-bottom: 2.53em;
+    width: 90%;
+    max-width: 297px;
+    transform: unset;
+    justify-content: center;
+    align-items: center;
+  }
 }
