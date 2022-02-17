@@ -12,6 +12,7 @@
   --Toggle-Active-Background: hsl(174, 73%, 70%);
   --Light-Grayish-Red-Discount-Background: hsl(14, 92%, 95%);
   --Light-Red-Discount-Text: hsl(15, 100%, 70%);
+  --Light-Red-Discount-Text-background: hsl(14, 92%, 95%);
   --Pale-Blue-CTA-Text: hsl(226, 100%, 87%);
 
   /* Neutral */
@@ -152,6 +153,8 @@ body {
   display: flex;
   font-size: 0.8em;
   margin-bottom: 2.53em;
+  width: 90%;
+  transform: translateX(30px);
 }
 
 .per-month {
@@ -168,6 +171,26 @@ body {
 
 .monthly-container {
   display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yearly {
+  display: flex;
+  width: 55%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.yearly::after {
+  content: "25%";
+  color: var(--Light-Red-Discount-Text);
+  background: var(--Light-Red-Discount-Text-background);
+  border-radius: 9.5px;
+  padding: 0.1em 0.75em;
+  position: relative;
+  right: 10px;
 }
 
 input[type="checkbox"] {
@@ -179,6 +202,7 @@ input[type="checkbox"] {
   border-radius: 15px;
   cursor: pointer;
   position: relative;
+  transform: translateY(3px);
 }
 
 input:checked[type="checkbox"] {
