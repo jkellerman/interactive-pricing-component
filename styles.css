@@ -110,6 +110,10 @@ pricing-container
   justify-content: center;
 }
 
+/* =============
+Range Slider 
+==============*/
+
 .slider-container {
   width: 85.55%;
   margin: 2.74em auto 2.6em;
@@ -199,6 +203,9 @@ pricing-container
   height: 8px;
 }
 
+/* ==============
+=============== */
+
 .pricing {
   display: flex;
   justify-content: center;
@@ -250,6 +257,10 @@ pricing-container
   position: relative;
   right: 10px;
 }
+
+/* ==============
+Toggle Switch 
+===============*/
 
 input[type="checkbox"] {
   width: 43px;
