@@ -37,6 +37,10 @@ body {
   background-color: white;
 }
 
+/* ===============
+Header 
+ ==============*/
+
 .header-container {
   margin: 6em 1.5em auto;
   text-align: center;
@@ -63,6 +67,10 @@ body {
   line-height: 23px;
 }
 
+/* ==============
+Main 
+================ */
+
 .main-container {
   margin: 4.25em 1.5em;
   display: flex;
@@ -73,6 +81,10 @@ body {
   background-color: var(--White-Pricing-Component-Background);
   box-shadow: 0px 16px 16px 0px var(--Light-Grayish-Blue-Empty-Slider-Bar);
 }
+
+/* ==============
+pricing-container
+============== */
 
 .pricing-container {
   display: flex;
@@ -115,11 +127,6 @@ body {
   border-radius: 5px;
   -webkit-appearance: none !important;
   background: var(--Light-Grayish-Blue-Empty-Slider-Bar);
-  /* background: linear-gradient(
-    90deg,
-    var(--Soft-Cyan-Full-Slider-Bar) 50%,
-    var(--Light-Grayish-Blue-Empty-Slider-Bar) 50%
-  ); */
   outline: none;
 }
 
@@ -277,6 +284,10 @@ input:checked[type="checkbox"]::before {
   left: 25px;
 }
 
+/* ==============
+cta container 
+============== */
+
 .list {
   margin: 1.6em auto 2.3em;
   font-size: 0.8em;
@@ -314,7 +325,9 @@ li::before {
   color: #ffffff;
 }
 
-/* footer  */
+/* =============
+footer
+=============  */
 
 .attribution {
   font-size: 11px;
