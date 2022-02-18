@@ -79,23 +79,18 @@ toggle.addEventListener("click", (e) => {
     switch (output.innerText) {
       case "$6.00":
         output.innerText = "$8.00";
-        pageviews.innerText = "10K pageviews";
         break;
       case "$9.00":
         output.innerText = "$12.00";
-        pageviews.innerText = "50K pageviews";
         break;
       case "$12.00":
         output.innerText = "$16.00";
-        pageviews.innerText = "100K pageviews";
         break;
       case "$18.00":
         output.innerText = "$24.00";
-        pageviews.innerText = "500K pageviews";
         break;
       case "$27.00":
         output.innerText = "$36.00";
-        pageviews.innerText = "1M pageviews";
         break;
     }
   }
