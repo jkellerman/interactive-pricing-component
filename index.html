@@ -33,7 +33,6 @@
           <div class="pricing-component">
             <div class="pageviews">100k pageviews</div>
             <div class="slider-container">
-              <label for="slider"></label>
               <input
                 type="range"
                 min="0"
@@ -42,6 +41,7 @@
                 step="25"
                 id="slider"
                 class="slider"
+                aria-labelledby="range-slider"
               />
               <div id="selector">
                 <div class="select-btn"></div>
@@ -57,9 +57,12 @@
             <div class="monthly-container">
               <div class="monthly">Monthly Billing</div>
               <div>
-                <label for="toggle">
-                  <input class="toggle" type="checkbox" id="toggle" />
-                </label>
+                <input
+                  class="toggle"
+                  type="checkbox"
+                  id="toggle"
+                  aria-labelledby="toggle"
+                />
               </div>
             </div>
             <div class="yearly">Yearly Billing</div>
