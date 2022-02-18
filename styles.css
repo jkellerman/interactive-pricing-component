@@ -338,6 +338,9 @@ footer
 }
 
 @media (min-width: 575px) {
+  .header {
+    font-size: 1.87rem;
+  }
   .main-container {
     margin: 4.25em auto;
     width: 540px;
