@@ -41,7 +41,6 @@
                 step="25"
                 id="slider"
                 class="slider"
-                aria-labelledby="range-slider"
               />
               <div id="selector">
                 <div class="select-btn"></div>
@@ -57,12 +56,9 @@
             <div class="monthly-container">
               <div class="monthly">Monthly Billing</div>
               <div>
-                <input
-                  class="toggle"
-                  type="checkbox"
-                  id="toggle"
-                  aria-labelledby="toggle"
-                />
+                <label for="toggle">
+                  <input class="toggle" type="checkbox" id="toggle" />
+                </label>
               </div>
             </div>
             <div class="yearly">Yearly Billing</div>
