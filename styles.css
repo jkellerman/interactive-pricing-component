@@ -340,6 +340,14 @@ footer
 @media (min-width: 575px) {
   .header {
     font-size: 1.87rem;
+    margin-bottom: 0.43em;
+  }
+
+  .sub-heading {
+    margin-top: 0;
+    font-size: 1rem;
+    width: 55%;
+    line-height: 23px;
   }
   .main-container {
     margin: 4.25em auto;
@@ -365,16 +373,21 @@ footer
 
   .pricing {
     grid-column-start: 2;
-    margin: 1em auto 1em;
-    font-size: 2.7rem;
+    margin: 2em auto 2em;
+
     display: flex;
     gap: 0;
-    width: 180px;
+    width: 200px;
     justify-content: space-evenly;
   }
 
+  .price-amount {
+    font-size: 2.7rem;
+  }
+
   .slider-container {
-    margin-top: 0;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
     grid-row-start: 2;
     grid-column: span 2;
     width: 444px;
