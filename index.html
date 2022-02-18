@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
@@ -36,15 +37,18 @@
                 type="range"
                 min="0"
                 max="100"
+                value="50"
+                step="25"
                 id="slider"
                 class="slider"
               />
               <div id="selector">
                 <div class="select-btn"></div>
               </div>
+              <div class="progress-bar"></div>
             </div>
             <div class="pricing">
-              <div class="price">$<span class="price-amount">16.00</span></div>
+              <div class="price-amount">$16.00</div>
               <div class="per-month">/ month</div>
             </div>
           </div>
