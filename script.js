@@ -40,11 +40,11 @@ slider.oninput = function () {
   if (toggle.checked === true) {
     switch (output.innerText) {
       case "0":
-        output.innerText = "$£.00";
+        output.innerText = "$£6.00";
         pageviews.innerText = "10K pageviews";
         break;
       case "25":
-        output.innerText = "$£.00";
+        output.innerText = "$£9.00";
         pageviews.innerText = "50K pageviews";
         break;
       case "50":
